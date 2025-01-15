@@ -7,12 +7,12 @@ import (
 
 func main() {
 
-	fmt.Println(InsertionSortNUmbers([]int{8, 2, 5, 1, 9, 10, 2}))
+	fmt.Println(InsertionSortNumbers([]int{8, 2, 5, 1, 9, 10, 2}))
 	fmt.Println(InsertionSortAlphabets([]string{"orange", "banana", "apple", "strawberry"}))
 
 }
 
-func InsertionSortNUmbers(arr []int) []int {
+func InsertionSortNumbers(arr []int) []int {
 
 	for i := 1; i < len(arr); i++ {
 		key := arr[i]

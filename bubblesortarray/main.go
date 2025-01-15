@@ -5,8 +5,6 @@ import (
 	"strings"
 )
 
-
-
 func main(){
 	arr1 := []int{7,2,3,12,5,6,11,8,9}
 	fmt.Println("bubble sorted array of numbers in ascending := ",BubbleSortNumbers(arr1))

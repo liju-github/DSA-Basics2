@@ -5,7 +5,7 @@ import "fmt"
 type HashTable struct {
 	bucket [][]Entry
 	size   int
-}b
+}
 
 type Entry struct {
 	key   int
