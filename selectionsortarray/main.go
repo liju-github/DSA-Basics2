@@ -27,7 +27,6 @@ func SelectionSortNumbers(arr []int) []int {
 	}
 
 	return arr
-
 }
 
 func SelectionSortAlphabets(arr []string)[]string {

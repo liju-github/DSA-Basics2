@@ -15,14 +15,14 @@ func main() {
 func InsertionSortNumbers(arr []int) []int {
 
 	for i := 1; i < len(arr); i++ {
-		key := arr[i]
+		temp := arr[i]
 
 		j := i - 1
-		for j > (-1) && arr[j] > key {
+		for j > (-1) && arr[j] > temp {
 			arr[j+1] = arr[j]
 			j--
 		}
-		arr[j+1] = key
+		arr[j+1] = temp
 	}
 
 	return arr
@@ -30,15 +30,15 @@ func InsertionSortNumbers(arr []int) []int {
 
 func InsertionSortAlphabets(arr []string) []string {
 	for i := 1; i < len(arr); i++ {
-		key := arr[i]
+		temp := arr[i]
 		j := i - 1
 
-		for j > (-1) && strings.Compare(arr[j], key) >= 1 {
+		for j > (-1) && strings.Compare(arr[j], temp) >= 1 {
 			arr[j+1] = arr[j]
 			j -= 1
 		}
 
-		arr[j+1] = key
+		arr[j+1] = temp
 	}
 	return arr
 }
